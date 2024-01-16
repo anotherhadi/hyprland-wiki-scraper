@@ -2,7 +2,8 @@
 
 ## Overview
 
-The Hyprland Wiki Scraper is a tool designed to extract information from the Hyprland Wiki, specifically focusing on the Variables page. It parses the Markdown content of the Variables page, organizes the information into a structured format, and outputs it as JSON.
+The Hyprland Wiki Scraper is a tool designed to extract information from the Hyprland Wiki. It parses the Markdown content of the Variables page, organizes the information into a structured format, and outputs it as JSON.
+It will read configuration variables from the "Variables", "Dwindle Layout" and "Master Layout" pages.
 
 Used for [hyprsettings](https://github.com/anotherhadi/hyprsettings)
 
@@ -12,16 +13,19 @@ Used for [hyprsettings](https://github.com/anotherhadi/hyprsettings)
 - **Data Structuring:** Organizes the parsed information into a structured format using Go data structures.
 - **JSON Output:** Generates a JSON representation of the parsed data for easy consumption.
 
-## Usage
+## Installation
 
-1. Clone the repository
-2. Run the script
+Install it with `go`:
 
 ```bash
-go run main.go > hyprland-wiki-variables.json
+go install github.com/anotherhadi/hyprland-wiki-scraper@latest
 ```
 
-3. The tool will output the structured data in JSON format.
+## Usage
+
+```bash
+hyprland-wiki-scraper
+```
 
 **Output:**
 
